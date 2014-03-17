@@ -28,4 +28,4 @@ class ErrorException extends \Exception
         $this->line = $line;
         $this->context = $context;
     }
-} 
+}
