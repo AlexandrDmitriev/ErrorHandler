@@ -6,7 +6,8 @@ use ErrorHandler\Exception\ErrorException;
 
 class ErrorHandler
 {
-    public function __construct(){
+    public function __construct()
+    {
         set_error_handler(array($this, 'handle'));
     }
 
@@ -14,4 +15,4 @@ class ErrorHandler
     {
         throw new ErrorException($number, $message, $file, $line, $context);
     }
-} 
+}
